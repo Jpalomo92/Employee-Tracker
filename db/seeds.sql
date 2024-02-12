@@ -1,11 +1,11 @@
---Table to list out the departments
+
 INSERT INTO department (name)
 VALUES ("Engineering"),
        ("Finance"),
        ("Legal"),
        ("Sales");
 
---Table to list out the roles with title salary and refrences which department the role is in
+
 INSERT INTO roles (title, salary, department_id)
 VALUES ("Sales Lead", 100000, 4),
        ("Salesperson", 80000, 4),
@@ -14,9 +14,9 @@ VALUES ("Sales Lead", 100000, 4),
        ("Account Manager", 160000, 2),
        ("Accountant", 125000, 2),
        ("Legal Team Lead", 250000, 3),
-       ("Lawyer", 190000, 3)
+       ("Lawyer", 190000, 3);
 
--- Table listing out the employees first and last name, references their role.
+
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("John", "Doe", 1, 1),
        ("Mike", "Chan", 2, 1),
