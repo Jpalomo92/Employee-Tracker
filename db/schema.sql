@@ -6,7 +6,7 @@ USE registrar_db;
 CREATE TABLE department (
 
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  department VARCHAR(30) NOT NULL,
+  name VARCHAR(30) NOT NULL,
   
 );
 
@@ -32,6 +32,7 @@ CREATE TABLE employee (
   manager_id INT,
   FOREIGN KEY (manager_id)
   REFERENCES employee(id)
+
 
 );
 
