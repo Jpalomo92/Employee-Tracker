@@ -22,9 +22,11 @@ const db = mysql.createConnection(
 );
 
 
-db.query('SELECT * FROM department', function (err, results) {
-    console.log(results);
-  });
+
+
+// db.query('SELECT * FROM department', function (err, results) {
+//     console.log(results);
+//   });
 
   // Default response for any other request (Not Found)
 
