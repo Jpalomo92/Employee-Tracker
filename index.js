@@ -107,7 +107,12 @@ function viewAllRoles(){
 
 //see all employee id, first and last name, job title, department, salary, and manager
 function viewAllEmployees(){
-  let query = 'SELECT employee.id, employee.first_name, employee.last_name, roles.title, roles.salary, department.name AS department, CONCAT(manager.first_name, " ", manager.last_name) AS manager FROM employee JOIN roles ON roles.id = employee.role_id JOIN department ON department.id = roles.department_id JOIN employee manager ON manager.id = employee.manager_id'
+  let query = 
+    `SELECT employee.id, employee.first_name, employee.last_name, roles.title, roles.salary, department.name AS department, CONCAT(manager.first_name, " ", manager.last_name) AS manager 
+    FROM employee 
+    JOIN roles ON roles.id = employee.role_id 
+    JOIN department ON department.id = roles.department_id 
+    LEFT JOIN employee manager ON manager.id = employee.manager_id`;
   db.query(query, (err, res) =>{
     if (err) throw err;
     console.table(res);
