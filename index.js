@@ -151,7 +151,7 @@ function addRole(){
       ON employee.role_id = roles.id
     JOIN department
       ON department.id = roles.department_id
-    GROUP BY department.id, department.name `
+     `
    
    //pulls a list of departments id and names
     db.query(query,(err, res) =>{
@@ -195,7 +195,7 @@ function addToRole(department){
           department_id: res.department
       },(err, res)=>{
           if(err) throw err;
-          firstPrompt();
+          mainPrompt();
       });
   });
 }
@@ -252,7 +252,7 @@ function employeeRoles(role) {
         role_id: res.roleId
       },(err, res)=>{
         if(err) throw err;
-        firstPrompt();
+        mainPrompt();
     });
   });
 }
@@ -332,7 +332,7 @@ function getUpdatedRole(employee, roleChoices) {
       let query = `UPDATE employee SET role_id = ? WHERE id = ?`
       db.query(query,[ res.role, res.employee],(err, res)=>{
           if(err)throw err;
-          firstPrompt();
+          mainPrompt();
         });
     });
 }
