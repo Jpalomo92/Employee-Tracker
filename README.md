@@ -12,15 +12,19 @@
   * [Questions?](#questions)
 
   ## Description
-  This project was done to create an employee tracker that allows the user to view all employees, departments, roles, and even make necessary updates. The user will be able to easily follow the prompts to select the appropriate action.
+  This application is an employee tracker that allows the user to view all employees, departments, roles, and even make necessary updates. The user is able to easily follow the prompts to select the appropriate action, updating the respective employee, role, and department.
 
   ## Installation
   To install this application, please copy the ssh link from the repo, and paste it using git clone.
 
   ## Usage
-  To use this project, be sure that you are in the correct file path in your command-line/terminal. Once you are in the correct file path of the cloned files, type mysql -u root -p and source the schema and seeds file. Once you have done this, type quit to exit out of mysql. You will then be brought back to the file path. Once you are back in the file path type node index.js in your command-line. From here, you will then be provided a list of prompts to answer.
+  To use this project, be sure that you are in the correct file path in your command-line/terminal. Once you are in the correct file path of the cloned files, type 'mysql -u root -p' and source the schema and seeds file. Once you have done this, type quit to exit out of mysql. You are then brought back to the file path. Once you are back in the file path, type 'node index.js' in your command-line. From here, you are then provided a list of prompts to answer.
   
  Use the up and down arrow keys to scroll through the options and hit enter once you have highlighted the action that you would like to take.
+
+ Please click on the link below to see how to use this application.
+
+ [Video on how to use this application](https://drive.google.com/file/d/1JCSYCaeKqsDwg8FOrJNncBQlwzjKYOhA/view)  
 
   ## License
   
