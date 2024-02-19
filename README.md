@@ -23,7 +23,7 @@
   To use this application, be sure that you are in the correct file path in your command-line/terminal. 
 
   ### Sourcing The Databases
-  1. Once you are in the correct file path of the cloned files, you will need to first source the databases. This will tell the application where to source the data from. To source the data,type 'mysql -u root -p'. You will be prompted to enter in a password.
+  1. Once you are in the correct file path of the cloned files, you will need to first source the databases. This will tell the application where to source the data from. To source the data, type 'mysql -u root -p'. You will be prompted to enter in a password.
   2. When the user has entered in their password, first source the schema database by typing 'source db/schema.sql' and hit enter.
   3. After sourcing the schema database, type 'source db/seeds.sql' and hit enter. From here, you are done sourcing the databases. 
   4. Type 'quit' and hit enter to exit out of mysql. 
